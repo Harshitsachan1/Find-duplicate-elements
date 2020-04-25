@@ -1,0 +1,29 @@
+// Find occurrence of elements in array
+
+import java.util.Scanner;
+
+public class occurrence
+{
+    public static void main(String[] args)
+    {
+        int n,k,count=0,i=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter no. of elements in array-:");
+        n=sc.nextInt();
+        int arr[]=new int[n];
+        for(i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        System.out.print("Enter the element to count number of occurrence-:");
+        k=sc.nextInt();
+        for(i=0;i<n;i++)
+        {
+            if(arr[i]==k)
+            {
+                count++;
+            }
+        }
+        System.out.println("Number of Occurrence-:"+count);
+    }
+}
